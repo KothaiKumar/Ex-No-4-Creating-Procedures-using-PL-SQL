@@ -12,73 +12,36 @@
 
 ### Program:
 Create Table :
-
-
-1 create table employee1(Emp_id NUMBER primary key ,Ename varchar (100) , Dept varchar(20) , Salary NUMBER);
-
-
+```sql
+ create table employee1(Emp_id NUMBER primary key ,Ename varchar (100) , Dept varchar(20) , Salary NUMBER);
+```
 Create Procedure :
-
-
+```sql
 1  create or replace procedure insert_emp_data as
-
-
 2  begin
-
-
 3  insert into employee1(Emp_id,Ename,Dept,Salary)
-
-
 4  values(1,'Kothai', 'HR' , 50000);
-
-
-  5  insert into employee1(Emp_id,Ename,Dept,Salary)
-
-  
-  6  values (2,'Mithra Mukundaa' , 'IT',50000);
-
-  
-  7  insert into employee1(Emp_id,Ename,Dept,Salary)
-
-  
-  8  values (3,'Nethraa J' , 'Finance',50000);
-
-  
-  9  insert into employee1(Emp_id,Ename,Dept,Salary)
-
-  
- 10  values (4,'Lekhashree K' , 'IT',50000);
-
- 
- 11  commit;
-
- 
- 12  end;
-
- 
- 13  /
-
- 
- Call Procedure :
-
- 
-  1  begin
-
-  
-  2  insert_emp_data;
-
-  
-  3  end;
-
-  
-  4  /
-
-  
-  Display Table:
-
-  
-  1  select * from employee1;
-
+5  insert into employee1(Emp_id,Ename,Dept,Salary)
+6  values (2,'Mithra Mukundaa' , 'IT',50000);
+7  insert into employee1(Emp_id,Ename,Dept,Salary)
+8  values (3,'Nethraa J' , 'Finance',50000);
+9  insert into employee1(Emp_id,Ename,Dept,Salary)
+10  values (4,'Lekhashree K' , 'IT',50000);
+11  commit;
+12  end;
+13  /
+```
+Call Procedure :
+```sql
+1  begin
+2  insert_emp_data;
+3  end;
+4  /
+```
+Display Table:
+```sql
+1  select * from employee1;
+```
   
 ### Output:
 ![image](https://github.com/KothaiKumar/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215739/54f1064d-ad31-41f2-8d27-4a3ba89fcb7c)
