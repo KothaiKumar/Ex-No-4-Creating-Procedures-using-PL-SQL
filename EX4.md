@@ -50,4 +50,4 @@ Display Table:
 
 
 ### Result:
-Thus, a procedure is created using PL/SQL.
+Thus, a procedure is created using PL/SQL successfully.
